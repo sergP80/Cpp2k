@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/Documents/Project/univer/C++/Cpp2k/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -ID:/Documents/Project/univer/C++/Cpp2k/libs/calculator/include -g   -Wall -pedantic -std=gnu++17 -o libs\\calculator\\CMakeFiles\\calculator.dir\\src\\calculator.cpp.obj -c D:\\Documents\\Project\\univer\\C++\\Cpp2k\\libs\\calculator\\src\\calculator.cpp",
+  "file": "D:\\Documents\\Project\\univer\\C++\\Cpp2k\\libs\\calculator\\src\\calculator.cpp"
+},
+{
+  "directory": "D:/Documents/Project/univer/C++/Cpp2k/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -ID:/Documents/Project/univer/C++/Cpp2k/projects/simple_calc/include -ID:/Documents/Project/univer/C++/Cpp2k/libs/calculator/include -g   -Wall -pedantic -std=gnu++17 -o projects\\simple_calc\\CMakeFiles\\simple_calc.dir\\src\\simple_calc.cpp.obj -c D:\\Documents\\Project\\univer\\C++\\Cpp2k\\projects\\simple_calc\\src\\simple_calc.cpp",
+  "file": "D:\\Documents\\Project\\univer\\C++\\Cpp2k\\projects\\simple_calc\\src\\simple_calc.cpp"
+}
+]

@@ -1,0 +1,6 @@
+# ninja log v5
+11	21	0	clean	9c4b4372737ab8da
+346	484	7290435393303694	D:/Documents/Project/univer/C++/Cpp2k/dist/bin/Windows/AMD64/simple_calc.exe	9f28fe216c5d88eb
+15	192	7290435390385550	libs/calculator/CMakeFiles/calculator.dir/src/calculator.cpp.obj	e19227766a05720b
+195	327	7290435391774387	D:/Documents/Project/univer/C++/Cpp2k/dist/lib/Windows/AMD64/libcalculator.a	f3e29f66d54a796c
+20	345	7290435391955786	projects/simple_calc/CMakeFiles/simple_calc.dir/src/simple_calc.cpp.obj	3e18104e214bd233

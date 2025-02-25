@@ -1,0 +1,155 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "libs",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-libs-Debug-dd7a5ca29a7a50124f40.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs"
+				},
+				{
+					"build" : "libs/calculator",
+					"jsonFile" : "directory-libs.calculator-Debug-ad5c15cf543bce1b2374.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libs/calculator",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "projects",
+					"childIndexes" : 
+					[
+						4
+					],
+					"jsonFile" : "directory-projects-Debug-e37290e84ffc757481da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "projects"
+				},
+				{
+					"build" : "projects/simple_calc",
+					"jsonFile" : "directory-projects.simple_calc-Debug-71c7968e599e9ab58f7d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "projects/simple_calc",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						3
+					],
+					"name" : "Cpp2k"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "calculator",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "simple_calc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "calculator::@ab9f21c7516aba17e070",
+					"jsonFile" : "target-calculator-Debug-4c8f9797ef203df314ca.json",
+					"name" : "calculator",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "simple_calc::@5cf856d534527afbd645",
+					"jsonFile" : "target-simple_calc-Debug-fb213140d94a2e0d211a.json",
+					"name" : "simple_calc",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Documents/Project/univer/C++/Cpp2k/build",
+		"source" : "D:/Documents/Project/univer/C++/Cpp2k"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
