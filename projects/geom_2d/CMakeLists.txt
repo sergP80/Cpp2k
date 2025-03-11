@@ -1,4 +1,4 @@
-﻿project("fast_matrix")
+﻿project("geom_2d")
 
 file(GLOB SRC src/*.cpp src/*.cxx)
 
