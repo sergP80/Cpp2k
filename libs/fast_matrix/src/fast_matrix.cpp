@@ -17,7 +17,7 @@ namespace matrix {
 		}
 	}
 	
-	void FastMatrix::check_indices(const int& i, const int& j) const throw(xInvalidIndices)
+	void FastMatrix::check_indices(const int& i, const int& j) const noexcept(false)
 	{
 		if (!this->data_)
 		{

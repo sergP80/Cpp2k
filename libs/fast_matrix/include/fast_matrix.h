@@ -7,11 +7,10 @@ namespace matrix {
 	class xInvalidIndices {};
 
 	class FastMatrix {
-	private:
 		const int& rows_;
 		const int& cols_;
 		int* data_;
-		void check_indices(const int& i, const int& j) const throw(xInvalidIndices);
+		void check_indices(const int& i, const int& j) const noexcept(false);
 	public:
 		FastMatrix(const int& rows, const int& cols);
 		

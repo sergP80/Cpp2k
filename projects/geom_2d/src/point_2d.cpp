@@ -19,6 +19,8 @@ namespace geom_2d {
 
 		this->x = rhs.x;
 		this->y = rhs.y;
+
+		return *this;
 	}
 
 	std::ostream& Point2D::display(std::ostream& os) const

@@ -364,3 +364,5 @@ FodyWeavers.xsd
 
 build
 dist
+cmake-build-*
+.idea
