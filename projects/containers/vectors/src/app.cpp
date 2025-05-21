@@ -4,6 +4,63 @@
 
 using namespace std;
 
+template<typename K, typename V>
+struct Pair {
+    K key;
+    V value;
+};
+
+
+template<typename K, typename V>
+class Map
+{
+    Pair<K, V> data[100];
+};
+
+class IntVector {
+    int data[10];
+public:
+    int get(int id)
+    {
+        return data[id];
+    }
+
+    void set(int id, int value)
+    {
+        data[id] = value;
+    }
+};
+
+class DoubleVector {
+    double data[10];
+public:
+    double get(int id)
+    {
+        return data[id];
+    }
+
+    void set(int id, double value)
+    {
+        data[id] = value;
+    }
+};
+
+template<typename T>
+class Vector {
+    T data[10];
+public:
+    T get(int id)
+    {
+        return data[id];
+    }
+
+    void set(int id, T value)
+    {
+        data[id] = value;
+    }
+};
+
+
 class Person
 {
   int age;
@@ -66,12 +123,94 @@ std::istream& operator>>(std::istream& is, Person& obj)
   return is;
 }
 
+//
+//int find_first(int a[], int size, int key)
+//{
+//    int result = -1;
+//
+//    for (int i = 0; i < size; ++i)
+//    {
+//        if (a[i] == key)
+//        {
+//            return i;
+//        }
+//    }
+//
+//    return result;
+//}
+//
+//int find_first(double a[], int size, double key)
+//{
+//    int result = -1;
+//
+//    for (int i = 0; i < size; ++i)
+//    {
+//        if (a[i] == key)
+//        {
+//            return i;
+//        }
+//    }
+//
+//    return result;
+//}
 
+template<typename T>
+int find_first(T a[], int size, T key)
+{
+    int result = -1;
+
+    for (int i = 0; i < size; ++i)
+    {
+        if (a[i] == key)
+        {
+            return i;
+        }
+    }
+
+    return result;
+}
 
 
 int main() {
   vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
+  {
+      Vector<int> intv1;
+
+      Vector<double> doublev1;
+  }
+  {
+      cout << "Find in int array=============" << endl;
+      int a1[] = {-1, 4, -2, 6, 7};
+
+      int size = sizeof(a1) / sizeof(a1[0]);
+
+      int result = find_first<int>(a1, size, 6);
+
+      cout << result << endl;
+
+      result = find_first(a1, size, 8);
+
+      cout << result << endl;
+  }
+
+
+  {
+      cout << "Find in double array=============" << endl;
+      double a1[] = { -1.2, 11.3, 6.15, 7.21, -8.13 };
+
+      int size = sizeof(a1) / sizeof(a1[0]);
+
+      int result = find_first<double>(a1, size, 6.15);
+
+      cout << result << endl;
+
+      result = find_first(a1, size, -8.20);
+
+      cout << result << endl;
+  }
+
+  
   // {
   //   for (auto item: v)
   //   {
@@ -106,7 +245,8 @@ int main() {
   //   }
   // }
 
-  {
+ 
+  /*{
     vector<Person> persons;
 
     persons.emplace_back(12, "Helen");
@@ -152,6 +292,6 @@ int main() {
         cout << person << endl;
       }
     }
-  }
+  }*/
   return 0;
 }
