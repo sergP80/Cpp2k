@@ -42,13 +42,7 @@ struct xOutOfIndexArray{
 template<typename T, int size>
 class Array {
     T data[size];
-    int size_;
 public:
-    Array()
-    {
-        size_ = size;
-    }
-
     const T& get(int id) const
     {
         if (id < 0 || id >= size)
@@ -69,14 +63,14 @@ public:
         data[id] = value;
     }
 
-    const int size() const
+    const int get_size() const
     {
-        return size_;
+        return size;
     }
 
     int find_first(const T& key)
     {
-        for (int i = 0; i < size_; ++i)
+        for (int i = 0; i < size; ++i)
         {
             if (data[i] == key)
             {
@@ -97,10 +91,16 @@ int main() {
     v1.set(1, 5);
     v1.set(2, 4);
 
-    int idx = v1.find_first(5);
+    int key = 5;
+    int idx = v1.find_first(key);
 
-    cout << idx << endl;
-    
+    cout << key << " index is: " << idx << endl;
+
+    key = -5;
+    idx = v1.find_first(key);
+
+    cout << key << " index is: " << idx << endl;
+
     Array<string, 5> s_vector;
 
   return 0;

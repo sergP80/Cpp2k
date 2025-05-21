@@ -39,8 +39,6 @@ using namespace std;
 template<typename T>
 int find_first(T a[], int size, T key)
 {
-    int result = -1;
-
     for (int i = 0; i < size; ++i)
     {
         if (a[i] == key)
@@ -49,7 +47,7 @@ int find_first(T a[], int size, T key)
         }
     }
 
-    return result;
+    return -1;
 }
 
 
