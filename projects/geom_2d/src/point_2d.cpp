@@ -23,6 +23,20 @@ namespace geom_2d {
 		return *this;
 	}
 
+	const double Point2D::distance(const Point2D& rhs) const
+	{
+		if (this == &rhs)
+		{
+			return 0.0;
+		}
+
+		double dx = x - rhs.x;
+		
+		double dy = y - rhs.y;
+
+		return sqrt(dx * dx + dy * dy);
+	}
+
 	std::ostream& Point2D::display(std::ostream& os) const
 	{
 		os << "(" << this->x << ";" << this->y << ")";

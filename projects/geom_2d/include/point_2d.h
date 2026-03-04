@@ -37,6 +37,8 @@ namespace geom_2d{
 
 		std::ostream& display(std::ostream&) const;
 
+		const double distance(const Point2D& rhs) const;
+
 		friend std::ostream& operator<<(std::ostream&, const Point2D&);
 	};
 
